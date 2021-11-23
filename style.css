@@ -1,0 +1,44 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+
+  font-family: "Lato", sans-serif;
+  font-weight: 400;
+  font-size: 16px
+  line-height: 1.7;
+  color: #777; 
+}
+
+.header{
+  background-image: linear-gradient(
+      to right bottom,
+      rgba(59, 130, 246, 0.5),
+      rgba(690, 130, 246, 0.9)),
+   url(8666813199fd98f3919dfcc6e33cf1e2.svg);
+  height: 95vh;
+}
+
+.features{
+  height: 70vh;
+  background-color: white;
+}
+.mobile-app{
+  background-color:pink;
+  height: 70vh;
+}
+.introduction{
+  background-color:yellow;
+  height: 70vh;
+}
+.testimonial-wrapper{
+  background-color:brown;
+  height: 60vh;
+}
+.account{
+  background-color:pink;
+  height: 70vh;
+}
