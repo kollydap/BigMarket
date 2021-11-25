@@ -14,21 +14,154 @@ body {
 }
 
 .header{
+  position: relative;
   background-image: linear-gradient(
-      to right bottom,
-      rgba(59, 130, 246, 0.5),
-      rgba(690, 130, 246, 0.9)),
+      to left bottom,
+     rgba(69, 69, 26, 100), 
+     rgba(690, 130, 246, 0.9)),
    url(8666813199fd98f3919dfcc6e33cf1e2.svg);
   height: 95vh;
 }
+.header__nav{
+  position: absolute;
+  top:40px;
+  left: 35%;
+
+}
+.nav__link{
+  color: white;
+  text-decoration: none;
+  font-size: 20px;
+  padding: 0 25px;
+}
+
+.header__logo-box{
+  position:absolute;
+  top:40px;
+  left:40px;
+}
+.header__logo{
+  height: 30px;
+}
+.header__text-box{
+  position:absolute;
+  top: 30%;
+  left: 40px;
+  text-align: center;
+}
+.header__hero-box{
+  position: absolute;
+  top:16%;
+  left:72%;
+}
+.header__hero{
+  position: 
+  height: 400px;
+  top: 70px;
+  left: 90px;
+}
+.header__cast{
+  position: absolute;
+  border-radius: 20px;
+  width: 95%;
+  background-color: lightblue;
+  height:50%;
+  top: 90%;
+  left:2.5%;
+}
+
+.heading-primary{
+  color: #fff;
+  backface-visibility: hidden;
+}
+.heading-primary--main{
+  display: block;
+  font-size: 60px;
+  font-weight: 400;
+  letter-spacing: 5px;
+  animation-name: moveInLeft;
+  animation-duration: 1s;
+
+}
+.heading-primary--sub{
+  margin-top: 40px;
+  display: block;
+  font-weight: 200;
+  letter-spacing: 2.5px;
+  animation-name: moveInRight;
+  animation-duration: 1s;
+  margin-bottom: 20px;
+}
+.btn:link,
+.btn:visited{
+  text-decoration: none;
+  padding:15px 40px;
+  display:inline-block; 
+  border-radius: 15px;
+  transition: all .3s;
+}
+.btn:hover{
+  transform: translateY(-3px);
+  box-shadow: 0 10px 20px rgba(0,0,0,.2); 
+}
+.btn:active{
+  transform: translateY(-1px);
+  box-shadow: 0 5px 20px rgba(0,0,0,.2)
+}
+
+.btn--yellow{
+  background-color:yellow;
+  color: #777;
+}
+
+@keyframes moveInLeft{
+  0% {
+    opacity: 0;
+    transform: translateX(-100px);
+  }
+  80% {
+    transform: translateX(10px);
+
+  }
+  100%{
+    opacity:1;
+    transform: translate(0);
+  }
+}
+@keyframes moveInRight{
+  0% {
+    opacity: 0;
+    transform: translateX(100px);
+  }
+ 
+  
+  100%{
+    opacity:1;
+    transform: translate(0);
+  }
+}
+
+
+
 
 .features{
+  position: relative;
   height: 70vh;
   background-color: white;
+  clip-path: polygon();
 }
+.card{
+  position: absolute;
+  width: 40%
+  background-color:black;
+}
+
+
+
 .mobile-app{
   background-color:pink;
   height: 70vh;
+
 }
 .introduction{
   background-color:yellow;
